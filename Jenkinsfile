@@ -3,9 +3,9 @@ CODE_CHANGE = get
 pipeline {
     agent any
     parameters {
-        string(name: 'VERSION', defaultValue '1.0.0', descripion: 'version to deploy on prod')
-        choice(name: 'VERSION', choices: ['1.1.0', '1.2.0', '1.3.0'], descripion: 'version type')
-        beeleanParam(name: 'executeTests', defaultValue: true, descripion: '')
+        string(name: 'VERSION', defaultValue '1.0.0', description: 'version to deploy on prod')
+        choice(name: 'VERSION', choices: ['1.1.0', '1.2.0', '1.3.0'], description: 'version type')
+        booleanParam(name: 'executeTests', defaultValue: true, description: '')
     }
     tools {
         maven 'maven-3.18'
