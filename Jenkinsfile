@@ -1,5 +1,4 @@
  def gv
-CODE_CHANGE = get
 pipeline {
     agent any
     parameters {
