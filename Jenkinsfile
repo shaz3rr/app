@@ -34,7 +34,7 @@ pipeline {
                 echo 'deploying the application'
                 echo "deploying version ${params.VERSION}"
                 withCredentials([
-                    usernamePassword(credentials: 'server', usernameVariable: USER, passwordVariable: PASS)
+                    usernamePassword(credentialsId: 'server', usernameVariable: USER, passwordVariable: PASS)
                 ]) {
                     echo "$USER and $PASS"
                 }
