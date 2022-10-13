@@ -28,7 +28,7 @@ pipeline {
         stage("build image") {
             steps {
                 script {
-                    buildImage()
+                    buildImage 'localhost:8083/java-maven-app:4.0'
                 }
             }
         }
