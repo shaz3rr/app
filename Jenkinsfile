@@ -2,7 +2,7 @@
 
 library identifier: 'jenkins-shared-library@master', retriever: modernSCM(
         [$class: 'GitSCMSource',
-        remote: https://github.com/shaz3rr/JenkinsSL.git,
+        remote: 'https://github.com/shaz3rr/JenkinsSL.git',
         credentialsId: 'nexus-docker-repo'
         ]
 )
