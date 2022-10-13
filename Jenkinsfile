@@ -29,6 +29,8 @@ pipeline {
             steps {
                 script {
                     buildImage 'localhost:8083/java-maven-app:4.0'
+                    dockerLogin()
+                    dockerPush 'localhost:8083/java-maven-app:4.0'
                 }
             }
         }
