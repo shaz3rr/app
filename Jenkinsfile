@@ -3,10 +3,10 @@
 library identifier: 'jenkins-shared-library@master', retriever: modernSCM(
         [$class: 'GitSCMSource',
         remote: 'https://github.com/shaz3rr/JenkinsSL.git',
-        credentialsId: 'nexus-docker-repo'
+        credentialsId: 'dockerhub'
         ]
 )
-@Library('jenkins-shared-library@master')
+@Library('jenkins-shared-library@2.0')
 
 
 def gv
