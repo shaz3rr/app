@@ -6,7 +6,7 @@ library identifier: 'jenkins-shared-library@master', retriever: modernSCM(
         credentialsId: 'dockerhub'
         ]
 )
-@Library('jenkins-shared-library@master')
+//@Library('jenkins-shared-library@master')
 
 
 def gv
